@@ -1,0 +1,118 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block extra_head %}
+<!-- โหลดไอคอน Font Awesome -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+<!-- ฟอนต์น่ารักจาก Google Fonts -->
+<link href="https://fonts.googleapis.com/css2?family=Mali&display=swap" rel="stylesheet">
+{% endblock %}
+
+{% block content %}
+<div style="
+    max-width: 650px;
+    margin: 2rem auto;
+    padding: 2.5rem;
+    border-radius: 1.5rem;
+    background: linear-gradient(to bottom right, #7f1d1d, #4a2c2a);
+    box-shadow: 0 0 25px rgba(127, 29, 29, 0.5);
+    font-family: 'Mali', cursive;
+    color: #f3c6aa;
+    text-align: center;
+">
+
+    <!-- รูปโปรไฟล์ -->
+    <img src="{% static 'assets/img/aummm21.png' %}" alt="Waranya" style="
+        width: 140px;
+        height: 140px;
+        object-fit: cover;
+        border-radius: 50%;
+        border: 5px dashed #b55940;
+        background: #fff0eb;
+        margin-bottom: 1rem;
+        box-shadow: 0 5px 10px rgba(0,0,0,0.15);
+    ">
+
+    <!-- หัวเรื่อง -->
+    <h2 style="
+        color: #d05c3a;
+        font-size: 2.4rem;
+        font-weight: bold;
+        margin-bottom: 0.5rem;
+    ">
+        💌 ติดต่อ 💖
+    </h2>
+
+    <!-- เส้นคั่นหัวใจ -->
+    <div style="
+        width: 100px;
+        height: 3px;
+        background: #b55940;
+        margin: 1rem auto 2rem;
+        border-radius: 10px;
+        position: relative;
+    ">
+        <span style="
+            position: absolute;
+            top: -12px;
+            left: 50%;
+            transform: translateX(-50%);
+            font-size: 1.2rem;
+            color: #f4a261;
+        ">❤️</span>
+    </div>
+
+    <!-- รายการติดต่อ -->
+    <ul style="list-style: none; padding: 0; margin: 0 auto; max-width: 400px; text-align: left;">
+        <li style="margin-bottom: 1rem; background: #fff0eb; padding: 0.8rem 1rem; border-radius: 1rem;
+            transition: transform 0.2s, box-shadow 0.2s;"
+            onmouseover="this.style.transform='scale(1.03)';this.style.boxShadow='0 4px 12px rgba(0,0,0,0.15)'"
+            onmouseout="this.style.transform='';this.style.boxShadow=''">
+            <i class="fab fa-facebook fa-lg" style="width: 32px; color: #4a2c2a; margin-right: 0.8rem;"></i>
+            <a href="https://www.facebook.com/waranya.chimngam.2025" target="_blank" style="color: #7f1d1d; text-decoration: none;">
+                Waranya chimngam
+            </a>
+        </li>
+
+        <li style="margin-bottom: 1rem; background: #fff0eb; padding: 0.8rem 1rem; border-radius: 1rem;
+            transition: transform 0.2s, box-shadow 0.2s;"
+            onmouseover="this.style.transform='scale(1.03)';this.style.boxShadow='0 4px 12px rgba(0,0,0,0.15)'"
+            onmouseout="this.style.transform='';this.style.boxShadow=''">
+            <i class="fab fa-instagram fa-lg" style="width: 32px; color: #c1440e; margin-right: 0.8rem;"></i>
+            <a href="https://www.instagram.com/auuuuuux04/" target="_blank" style="color: #7f1d1d; text-decoration: none;">
+                auuuuuux04
+            </a>
+        </li>
+
+        <li style="margin-bottom: 1rem; background: #fff0eb; padding: 0.8rem 1rem; border-radius: 1rem;
+            transition: transform 0.2s, box-shadow 0.2s;"
+            onmouseover="this.style.transform='scale(1.03)';this.style.boxShadow='0 4px 12px rgba(0,0,0,0.15)'"
+            onmouseout="this.style.transform='';this.style.boxShadow=''">
+            <i class="fab fa-line fa-lg" style="width: 32px; color: #6b4226; margin-right: 0.8rem;"></i>
+            <a href="#" style="color: #7f1d1d; text-decoration: none;">
+                - WARANYA -
+            </a>
+        </li>
+
+        <li style="margin-bottom: 1rem; background: #fff0eb; padding: 0.8rem 1rem; border-radius: 1rem;
+            transition: transform 0.2s, box-shadow 0.2s;"
+            onmouseover="this.style.transform='scale(1.03)';this.style.boxShadow='0 4px 12px rgba(0,0,0,0.15)'"
+            onmouseout="this.style.transform='';this.style.boxShadow=''">
+            <i class="fas fa-envelope fa-lg" style="width: 32px; color: #b55940; margin-right: 0.8rem;"></i>
+            <a href="mailto:aumwaranya154@gmail.com" style="color: #7f1d1d; text-decoration: none;">
+                aumwaranya154@gmail.com
+            </a>
+        </li>
+
+        <li style="margin-bottom: 1rem; background: #fff0eb; padding: 0.8rem 1rem; border-radius: 1rem;
+            transition: transform 0.2s, box-shadow 0.2s;"
+            onmouseover="this.style.transform='scale(1.03)';this.style.boxShadow='0 4px 12px rgba(0,0,0,0.15)'"
+            onmouseout="this.style.transform='';this.style.boxShadow=''">
+            <i class="fas fa-phone fa-lg" style="width: 32px; color: #a64b2a; margin-right: 0.8rem;"></i>
+            <a href="tel:0902184589" style="color: #7f1d1d; text-decoration: none;">
+                0902184589
+            </a>
+        </li>
+    </ul>
+</div>
+{% endblock %}

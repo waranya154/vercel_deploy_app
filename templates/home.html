@@ -1,0 +1,81 @@
+{% extends "base.html" %}
+{% load static %}
+{% block content %}
+<h1 style="text-align: center; font-weight: 800; color: #460303ff; margin-bottom: 10px;">Welcome to wine BY WARANYA </h1>
+
+<p style="text-align: center; font-weight: 600; color: #d7d7d7ff; margin-bottom: 30px;">
+  This is the main content area where you can find the latest updates and news.
+</p>
+
+<h2 style="text-align: center; font-weight: 700; color: #ffffffff; margin-bottom: 20px;">wine Products</h2>
+
+<!-- Container เพื่อจัดให้กริดอยู่ตรงกลาง -->
+<div style="max-width: 1000px; margin: 0 auto;">
+  <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 25px;">
+    <!-- Card item -->
+    <div style="
+      border: 2px solid #4a1111ff; 
+      border-radius: 15px; 
+      padding: 20px; 
+      text-align: center; 
+      background: #2f2a2cff;
+      box-shadow: 0 4px 10px rgba(91, 14, 14, 1);
+      transition: transform 0.3s ease;
+    " 
+    onmouseover="this.style.transform='scale(1.05)'" 
+    onmouseout="this.style.transform='scale(1)'">
+      <img src="{% static 'assets/img/ww1.jpg' %}" alt="Cookie 1" style="width: 100%; height: auto; border-radius: 12px; margin-bottom: 15px;">
+      <h3 style="font-weight: 800; color: #743f02ff; margin-bottom: 8px;">Korta Katarina</h3>
+      <p style="font-weight: 700; color: #743f02ff;">Price:45,000 Baht</p>
+    </div>
+
+    <div style="
+      border: 2px solid #4a1111ff; 
+      border-radius: 15px; 
+      padding: 20px; 
+      text-align: center; 
+      background: #2f2a2cff;
+      box-shadow: 0 4px 10px rgba(91, 14, 14, 1);
+      transition: transform 0.3s ease;
+    "
+    onmouseover="this.style.transform='scale(1.05)'" 
+    onmouseout="this.style.transform='scale(1)'">
+      <img src="{% static 'assets/img/ww2.jpg' %}" alt="Cookie 2" style="width: 100%; height: auto; border-radius: 12px; margin-bottom: 15px;">
+      <h3 style="font-weight: 800; color: #c7c5c6ff; margin-bottom: 8px;">Teliani Valley รุ่น Khvanchkara</h3>
+      <p style="font-weight: 700; color: #743f02ff;">Price:50,000 Baht</p>
+    </div>
+
+    <div style="
+      border: 2px solid #4a1111ff; 
+      border-radius: 15px; 
+      padding: 20px; 
+      text-align: center; 
+      background: #2f2a2cff;
+      box-shadow: 0 4px 10px rgba(91, 14, 14, 1);
+      transition: transform 0.3s ease;
+    "
+    onmouseover="this.style.transform='scale(1.05)'" 
+    onmouseout="this.style.transform='scale(1)'">
+      <img src="{% static 'assets/img/ww3.jpg' %}" alt="Cookie 3" style="width: 100%; height: auto; border-radius: 12px; margin-bottom: 15px;">
+      <h3 style="font-weight: 800; color: #c8c3c5ff; margin-bottom: 8px;">Feudo Monaci Primitivo Salento 2009</h3>
+      <p style="font-weight: 700; color: #743f02ff;">Price:95,000 Baht</p>
+    </div>
+
+    <div style="
+      border: 2px solid #4a1111ff; 
+      border-radius: 15px; 
+      padding: 20px; 
+      text-align: center; 
+      background: #2f2a2cff;
+      box-shadow: 0 4px 10px rgba(91, 14, 14, 1);
+      transition: transform 0.3s ease;
+    "
+    onmouseover="this.style.transform='scale(1.05)'" 
+    onmouseout="this.style.transform='scale(1)'">
+      <img src="{% static 'assets/img/ww4.jpg' %}" alt="Cookie 4" style="width: 100%; height: auto; border-radius: 12px; margin-bottom: 15px;">
+      <h3 style="font-weight: 800; color: #d3d0d1ff; margin-bottom: 8px;">Apothic Brew Limited Rslease</h3>
+      <p style="font-weight: 700; color: #743f02ff;">Price: 25,000 Baht</p>
+    </div>
+  </div>
+</div>
+{% endblock %}

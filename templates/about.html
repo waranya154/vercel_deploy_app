@@ -1,0 +1,53 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block content %}
+<div style="
+    background: #4a2c2a;
+    border-radius: 1rem;
+    padding: 2rem;
+    max-width: 800px;
+    margin: 2rem auto;
+    box-shadow: 0 0 25px rgba(127, 29, 29, 0.5);
+    font-family: 'Segoe UI', sans-serif;
+    text-align: center;
+    color: #f3c6aa;
+">
+
+    <h1 style="color: #b55940; font-size: 2.8rem; font-weight: 800; margin-bottom: 1.2rem;">
+        ABOUT US 🥂
+    </h1>
+
+    <img src="{% static 'assets/img/aummm12.jpg' %}" alt="aum Profile" style="
+        width: 220px;
+        height: 220px;
+        object-fit: cover;
+        border-radius: 50%;
+        border: 5px solid #b55940;
+        box-shadow: 0 0 15px rgba(181, 89, 64, 0.7);
+        margin-bottom: 1.5rem;
+        background: #fff0eb;
+    ">
+
+    <h2 style="font-size: 2rem; font-weight: bold; color: #d05c3a;">AUMMY</h2>
+    <p style="font-size: 1.1rem; color: #e6b3a0;">นางสาววรัญญา ฉิมงาม 🍾 6712732125</p>
+
+    <div style="
+        background-color: #b55940;
+        color: #fff0eb;
+        padding: 1rem 1.5rem;
+        border-radius: 12px;
+        margin-top: 1.5rem;
+        max-width: 520px;
+        margin-left: auto;
+        margin-right: auto;
+        text-align: left;
+        font-weight: 600;
+    ">
+        <p style="margin-bottom: 0.8rem;">🎓 <strong>สาขา :</strong> วิทยาการคอมพิวเตอร์</p>
+        <p style="margin-bottom: 0.8rem;">🏫 <strong>มหาวิทยาลัย :</strong> มหาวิทยาลัยราชภัฏศรีสะเกษ</p>
+        <p style="margin-bottom: 0;">🎮 <strong>งานอดิเรก :</strong> ฟังเพลง,เขียนเรื่องสั้น,อ่านหนังสือ,วิ่ง,เล่นสเก็ตบอร์ด,งานออกแบบ</p>
+    </div>
+
+</div>
+{% endblock %}
